@@ -8,7 +8,7 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <link rel="icon" href="images/logo.png" type="image/gif" />
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -28,7 +28,11 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
+  <!-- include jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body class="sub_page">
@@ -53,29 +57,23 @@
               <li class="nav-item">
                 <a class="nav-link" href="about.html">介绍</a>
               </li>
+              <!--
               <li class="nav-item">
                 <a class="nav-link" href="skincare.html">治疗</a>
               </li>
+              -->
               <li class="nav-item">
                 <a class="nav-link" href="consult.html">咨询</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Contact Us</a>
               </li>
             </ul>
           </div>
           <div class="quote_btn-container">
             <a href="">
               <span>
-                Login
+                ADMIN
               </span>
               <i class="fa fa-user" aria-hidden="true"></i>
             </a>
-            <form class="form-inline">
-              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i>
-              </button>
-            </form>
           </div>
         </div>
       </nav>
@@ -91,46 +89,85 @@
           <div class="form_container">
             <div class="heading_container">
               <h2>
-                상담이나 예약 문의
+                网上咨询及预订
               </h2>
+              <a>※ 预约时，请输入您希望访问日期。</a>
             </div>
             <form action="">
               <div>
-                <input type="text" placeholder="이름" />
-              </div>
-              <div class="row">
-                <form>
-                  <label>
-                    <input type="radio" name="gender" value="male">man
-                    <input type="radio" name="gender" value="female">woman
-                  </label>
-                </form>
+                <input type="text" placeholder="姓名" required/>
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <select>
+                  <option value="female">女性</option>
+                  <option value="male">男性</option>
+                </select>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="手机号码及电子邮件地址" required/>
               </div>
               <div>
-                <input type="text" placeholder="title" />
+                <input type="date" min="2023-09-01" max="2100-09-01" value="2023-09-01" required/>
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" placeholder="想做的治疗项目" required/>
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="请输入您的皮肤问题" required/>
               </div>
               <div class="btn_box">
                 <button>
-                  SEND
+                  发送
                 </button>
               </div>
             </form>
           </div>
         </div>
+        <!--
         <div class="col-md-6">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.2842053735235!2d127.0240252120405!3d37.50121452775351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1a06717987f%3A0x9d89e14d2044d44f!2z66-465287J247ZS867aA6rO87J2Y7JuQ!5e0!3m2!1sko!2skr!4v1694866032261!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+          </div>
+          <div class="heading_container">
+            <h4>
+            <img src="https://cdn-icons-png.flaticon.com/512/3160/3160605.png" style="width: 60px">
+              如果您想进行更详细的咨询或更快速预约，请通过以下方法与我们联系。谢谢了。
+            </h4>
+          </div>
+        </div>
+        -->
+        <div class="col-md-6">
+          <div class="personal_info_agree" style="margin-left: 60px;">
+            <h2 style="margin-bottom: 25px;">个人信息收集·使用同意</h2>
+            <textarea style="width: 100%; height: 150px;">
+收集的个人信息条目
+公司为了会员注册、咨询、服务申请等,正在收集以下个人信息。
+
+- 收集项目:姓名、联系方式、电子邮件、标题、内容、附件
+- 个人信息收集方法:主页（会员注册）
+个人信息收集及使用目的
+公司将收集的个人信息用于以下目的。
+
+- 履行服务提供合同及根据服务提供结算费用
+购买及费用结算、物品配送或发票等发送
+
+- 会员管理
+会员制服务使用过程中本人确认、个人识别、防止不良会员非法使用和防止非许可使用、确认加入意向、年龄确认
+
+个人信息的保留及使用期限
+公司达到个人信息收集及使用目的后,无一例外地立即销毁相关信息。
+            </textarea>
+            <div class="agree_box" style="margin-top: 3px;">
+              <span style="margin-right: 40%;"><input type="radio" name="agree_check"><label>同意</label></span>
+              <span><input type="radio" name="agree_check"><label>不同意</label></span>
+            </div>
+          </div>
+          <div class="extra_info" style="margin-left: 60px; margin-top: 40px;">
+            <h5>如果您想享受更快的预约和更仔细的针对性咨询,请您联系以下医院代表号码。</h5>
+            <h3 style="margin-top: 70px;"><img src="https://cdn-icons-png.flaticon.com/128/94/94744.png" style="width: 10%;"><strong>  电话预约及咨询</strong></h3>
+            <h1 style="font-size: 60px;"><strong>02-1833-5375</strong></h1>
           </div>
         </div>
       </div>
@@ -140,8 +177,8 @@
 
   <!-- info section -->
   <section class="info_section long_section">
-
     <div class="container">
+      <!--
       <div class="contact_nav">
         <a href="">
           <i class="fa fa-phone" aria-hidden="true"></i>
@@ -162,31 +199,35 @@
           </span>
         </a>
       </div>
+      -->
 
       <div class="info_top ">
         <div class="row ">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="info_links">
+          <div class="col-sm-6 col-md-4 col-lg-5">
+            <div class="timetable">
               <h4>
-                QUICK LINKS
+                <img src="https://cdn-icons-png.flaticon.com/128/7048/7048044.png" style="width: 30px;"> Timetable (诊疗时间)
               </h4>
-              <div class="info_links_menu">
-                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="" href="about.html"> About</a>
-                <a class="" href="furniture.html">Furniture</a>
-                <a class="" href="blog.html">Blog</a>
-                <a class="" href="contact.html">Contact Us</a>
+              <div class="timetable_menu">
+                周一 : 11:00 ~ 20:00 <br>
+                周二,周五 : 10:00 ~ 20:00 <br>
+                周三,周四 : 10:00 ~ 19:00 <br>
+                周六 : 10:00 ~ 16:00 <br>
+                (周一午休时间 : 13:30 ~14:30 <br>
+                平时午休时间 : 13:00 ~ 14:00) <br>
+                <img src="https://cdn-icons-png.flaticon.com/128/7543/7543187.png" style="width: 20px;"> 周日,公休日休诊
               </div>
             </div>
           </div>
+          <!--
           <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
             <div class="info_post">
               <h5>
-                INSTAGRAM FEEDS
+                咨询及预约手段
               </h5>
               <div class="post_box">
                 <div class="img-box">
-                  <img src="images/f1.png" alt="">
+                  <i class="fa fa-phone" aria-hidden="true">+82 02-1833-5375</i>
                 </div>
                 <div class="img-box">
                   <img src="images/f2.png" alt="">
@@ -206,18 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="info_form">
-              <h4>
-                SIGN UP TO OUR NEWSLETTER
-              </h4>
-              <form action="">
-                <input type="text" placeholder="Enter Your Email" />
-                <button type="submit">
-                  Subscribe
-                </button>
-              </form>
-              <div class="social_box">
+          <div class="social_box">
                 <a href="">
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </a>
@@ -231,22 +261,71 @@
                   <i class="fa fa-instagram" aria-hidden="true"></i>
                 </a>
               </div>
+          -->
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_form">
+              <h4>
+                咨询及预约手段
+              </h4>
+              <i class="fa fa-phone" aria-hidden="true">  +82 02-1833-5375</i> <br>
+              <br>
+              <div id="test" class="modal" style="height: 60%; width: 100%;">
+                <p>
+                  WeChat ID : wxid_5pb4qztg0tp922 <br>
+                  <img src="images/wechatqr.png" width="70%">
+                </p>
+                <a href="#" rel="modal:close"><button>关</button></a>
+              </div>
+              <p><a href="#test" rel="modal:open"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670101.png" style="width:5%;"><button class="wechat" style="background-color: transparent; border: none; padding: 0%; margin: 0%;">  wechat</button></a></p>
+              <br>
+              <a href="https://booking.naver.com/booking/13/bizes/268266?area=ple" style="color: white;"><img src="https://t1.daumcdn.net/cfile/tistory/997861355D14D41D2D" style="width:5%;">  naver</a> <br>
+              <br>
+              <a href="https://www.instagram.com/me_line_official/" style="color: white;"><img src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" style="width:5%;">  instagram</a>
             </div>
           </div>
+          <div class="col-md-4" style="padding-left: 125px;">
+            <div class="footer_img">
+              <img src="images/professional.png" width="60%">
+              <p style="padding-left:10%; width:40px;">皮肤科专科医生证书</p>
+              <p style="padding-left: 10%;"><strong>通过实力证明</strong></p>
+              <p style="padding-left: 4%;"><strong>以信任为基础,</strong></p>
+            </div>
+            </div>
+          </div>  
         </div>
       </div>
     </div>
   </section>
+  <script>
+    function show() {
+        document.querySelector(".background").className = "background show";
+      }
+
+      function close() {
+        document.querySelector(".background").className = "background";
+      }
+
+      document.querySelector("#show").addEventListener("click", show);
+      document.querySelector("#close").addEventListener("click", close); 
+</script>
   <!-- end info_section -->
 
 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
+      <a href="clause.html" style="color: black;">个人信息处理方针  |  </a>
+      <a href="clause.html" style="color: black;">使用条款</a>
+      <p>
+        Meline皮肤科   |   首尔市江南区江南大路 432 JumpMilano 9楼 <br>
+        代表院长: 方章硕  |   营业执照: 220-09-89989   |   TEL: 02-1833-5375
+      </p>  
+      <!--
       <p>
         &copy; <span id="displayYear"></span> All Rights Reserved By
         <a href="https://html.design/">Free Html Templates</a>
       </p>
+      -->
     </div>
   </footer>
   <!-- footer section -->
